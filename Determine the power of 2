@@ -1,0 +1,15 @@
+//Determine the power of 2 (time complexity O (1)) 
+
+#include <bits/stdc++.h>
+using namespace std;
+
+bool isPowerOf2(int num){
+	return (num & (num-1))==0;
+} 
+
+int main(){
+	long long n;
+	cin >> n;
+	cout << isPowerOf2(n)?"Y":"N";
+	return 0;
+}
